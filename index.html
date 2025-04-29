@@ -1,18 +1,17 @@
 <!-- Unit 12 Project
 Requirements
-[  ] $() Select by Element, ID AND Class 
-[  ] Use Three Different jQuery Methods 
-[  ] Add Five CSS Declarations
-[  ] Include Three Images
+[ x ] $() Select by Element, ID AND Class 
+[ x ] Use Three Different jQuery Methods 
+[ x ] Add Five CSS Declarations
+[ x ] Include Three Images
 
 Select ONE Additional 
 [ no ] Feature 1 - Use .addClass() method
 [ no ] Feature 2 - Use a variable in javaScript 
 [ no ] Feature 3 - Use .mouseover() method
-[ no ] Feature 4 - Use .show() method
-[ no ] Feature 5 - Use .append() method
+[ yes ] Feature 4 - Use .show() method
+[ yes ] Feature 5 - Use .append() method
 -->
-
 
 <!DOCTYPE html>
 <html>
@@ -20,41 +19,238 @@ Select ONE Additional
     <meta charset="utf-8" />
     <title>Unit 12 Project</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delius&family=Ephesis&family=Limelight&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <button id="mem1-button">Memory #1</button>
-    <button id="mem2-button">Memory #2</button>
-    <button id="mem3-button">Memory #3</button>
-    <h1>My Top 3 Memories of <span>This Year</span></h1>
-    <ol>
-      <li>
-        <h3 id="mem1">Memory #1</h3>
-        <p>More about this memory.</p>
-      </li>
+    <h2></h2>
 
-      <li>
-        <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
-      </li>
+    <h2 class="by-bree">By Bree Marr</h2>
+    <br />
+    <br />
+    <h1>My Top 3 Memories of This Year!</h1>
+    <h2>(click on the emojis below to reveal my memorys)</h2>
 
-      <li>
-        <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
-      </li>
-    </ol>
+    <div class="buttons">
+      <button id="mem1-button">🌊</button>
+      <a href="#camp-section"><button id="mem2-button">🌲</button> </a>
+      <a href="#acting-section"><button id="mem3-button">🎭</button></a>
+    </div>
+
+    <h3 id="mem1">
+      Memory #1: <span class="memory">Beach </span>
+      <img
+        class="waveimg"
+        style="display: none"
+        src="https://cdn.glitch.global/31e00811-9784-4bf8-86d3-8d64cb3343bd/thumbnails%2Fbree's%20wave%20part%205.webp?1743692157637"
+        height="100"
+      />
+    </h3>
+
+    <div id="beachmemory">
+      <div class="beachtext" style="display: none">
+        <span class="bluetext">
+          I went to the beach so many times over the last year and loved every
+          second of it. My favorite days that I spent at the beach were:</span
+        >
+        <div>
+          <table class="beachtable">
+            <tr>
+              <th><strong class="bigger">Apr 29, 2024</strong></th>
+              <td>
+                This was our spring break in 2024, and my first time back at the
+                <br />
+                beach since the winter- My brother and I went in the ocean with
+                <br />
+                full wetsuits on because of how cold it was. It was totally
+                worth it.
+              </td>
+              <td>
+                <img
+                  src="https://cdn.glitch.global/995cffe3-2207-45c7-b2e7-4a81833b6760/IMG_9057.jpg?v=1745615531006"
+                  height="200"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <th><strong class="bigger"> May 26, 2024 </strong></th>
+              <td>
+                An amazing day I spent with my friends hanging out by the beach
+                <br />
+                eating popcorn, tanning, and swimming in the perfect ocean.
+              </td>
+              <td>
+                <img
+                  src="https://cdn.glitch.global/995cffe3-2207-45c7-b2e7-4a81833b6760/IMG_9056.jpg?v=1745616015708"
+                  width="200"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <th><strong class="bigger">Jun 16, 2024</strong></th>
+              <td>
+                I spent my regents week (when I wasnt testing) living it up by
+                <br />
+                the beach with my family and best friends. We mini golfed,
+                soaked <br />
+                in the hot tub, went on bikerides, watched the sunsets, surfed,
+                <br />
+                and went on an epic boat ride to the lighthouse!
+              </td>
+              <td>
+                <img
+                  src="https://cdn.glitch.global/995cffe3-2207-45c7-b2e7-4a81833b6760/IMG_9058.jpg?v=1745615103993"
+                  width="200"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th><strong class="bigger">Sep 22, 2024</strong></th>
+              <td>
+                My favorite season to be at the beach has always been the <br />
+                fall; when the crowds leave and the water is warmer than <br />
+                the air. This was a perfect day to swim in the ocean and <br />
+                I was blessed with my friends being there with me.
+              </td>
+              <td>
+                <img
+                  src="https://cdn.glitch.global/995cffe3-2207-45c7-b2e7-4a81833b6760/IMG_9065.jpg?v=1745616077311"
+                  width="200"
+                />
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <img
+      class="butterflyimg"
+      style="display: none"
+      src="https://sciencebob.com/wp-content/uploads/2014/07/butterfly.png"
+      width="140"
+    />
+    <h3 id="mem2">
+      Memory #2: <span class="memory" id="camp-section">Camping</span>
+      <img
+        style="display: none"
+        class="frogimg"
+        src="https://static.vecteezy.com/system/resources/thumbnails/037/824/527/small_2x/ai-generated-cartoon-frog-in-a-canoe-png.png"
+        height="160"
+      />
+    </h3>
+    <div id="campmemory">
+      <div class="camptext" style="display: none">
+        <h4>
+          Every year, my family goes camping on Labor Day weekend. I love being
+          out in nature. the Pocono Mountains are a beautiful place to be. We
+          always find animals like the Eastern newt, frogs, and fluffy
+          caterpillars on our hikes. We do super fun activities like kayaking,
+          swimming in the Delaware River, tie dying, bird watching, photography,
+          swimming in the lake, and singing by the campfire.
+        </h4>
+        <div class="divimages">
+          <img
+            src="https://cdn.glitch.global/995cffe3-2207-45c7-b2e7-4a81833b6760/IMG_9063.jpeg?v=1745628869548"
+            width="200"
+          />
+          <img
+            src="https://cdn.glitch.global/995cffe3-2207-45c7-b2e7-4a81833b6760/IMG_9061.jpeg?v=1745628877518"
+            width="200"
+          />
+          <img
+            src="https://cdn.glitch.global/995cffe3-2207-45c7-b2e7-4a81833b6760/IMG_9062.jpeg?v=1745628883691"
+            width="200"
+          />
+        </div>
+      </div>
+    </div>
+
+    <h3 id="mem3">
+      Memory #3: <span class="memory" id="acting-section">Acting</span>
+      <img
+        class="actingimg"
+        style="display: none"
+        src="https://www.pngmart.com/files/21/Acting-PNG-Photo.png"
+        height="100"
+      />
+    </h3>
+    <div id="actingmemory">
+      <div class="actingtext" style="display: none">
+        <h4>
+          This year I have done 3 scenes in acting class and 2 shakespeare shows
+          over the summer. I've had fun being an actor this year- its a main
+          aspect of my life.
+        </h4>
+        <div class="divimages">
+          <img
+            src="https://cdn.glitch.global/995cffe3-2207-45c7-b2e7-4a81833b6760/IMG_9143.jpeg?v=1745880840626"
+            width="200"
+          />
+          <img
+            src="https://cdn.glitch.global/995cffe3-2207-45c7-b2e7-4a81833b6760/IMG_9145.jpeg?v=1745880847007"
+            height="264"
+          />
+          <img
+            src="https://cdn.glitch.global/995cffe3-2207-45c7-b2e7-4a81833b6760/IMG_9147.jpeg?v=1745880852773"
+            width="200"
+          />
+          <img
+            src="https://cdn.glitch.global/995cffe3-2207-45c7-b2e7-4a81833b6760/IMG_9148.jpeg?v=1745880857859"
+            height="200"
+          />
+        </div>
+      </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
       $("#mem1-button").click(function () {
-        $("#mem1").css("color", "purple");
+        $("#mem1").css("color", "blue");
+        var p = $("<p>");
+        p.text("");
+        $("#beachmemory").append(p);
+        $(".waveimg").show(1000);
+        $(".beachtext").fadeIn(1000);
       });
 
       $("#mem2-button").click(function () {
-        $("#mem2").css("color", "blue");
+        $("#mem2").css("color", "green");
       });
 
       $("#mem3-button").click(function () {
-        $("#mem3").css("color", "green");
+        $("#mem3").css("color", "purple");
+      });
+
+      $("#mem2-button").click(function () {
+        $("#mem2").css("color", "green");
+
+        var p = $("<p>");
+        p.text("");
+        $("campmemory").append(p);
+        $(".frogimg").show(1000);
+        $(".camptext").fadeIn(1000);
+      });
+
+      $("#mem3-button").click(function () {
+        $("#mem3").css("color", "purple");
+        var p = $("<p>");
+        p.text("");
+        $(".actingimg").show(1000);
+        $("#actingmemory").append(p);
+        $(".actingtext").fadeIn(1000);
       });
     </script>
   </body>
